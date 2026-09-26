@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail" data-bg-color="#f4f1e9">
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg"><rect width="1200" height="800" fill="#f4f1e9"/><rect x="360" y="180" width="480" height="440" rx="10" fill="#ffffff" stroke="#1f4d3d" stroke-width="6"/><rect x="420" y="250" width="200" height="16" rx="8" fill="#1f4d3d"/><rect x="420" y="300" width="360" height="26" rx="8" fill="#17150f"/><rect x="420" y="348" width="300" height="26" rx="8" fill="#17150f"/><rect x="420" y="420" width="360" height="12" rx="6" fill="#c9c2b0"/><rect x="420" y="452" width="360" height="12" rx="6" fill="#c9c2b0"/><rect x="420" y="484" width="280" height="12" rx="6" fill="#c9c2b0"/><rect x="420" y="540" width="140" height="12" rx="6" fill="#1f4d3d"/></svg>
+</template>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;family=Archivo:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<script src="./doc-page.js"></script>
+<style>
+  doc-page:not(:defined) { visibility: hidden; }
+  a { color: #1f4d3d; }
+  a:hover { color: #0f2a21; }
+  @media print { [data-screen-only] { display: none !important; } }
+  /* Screen-only: below paper width the sheet goes fluid and the text reflows
+     instead of forcing a horizontal scroll. Print geometry is untouched. */
+  @media screen and (max-width: 900px) {
+    doc-page {
+      --doc-page-w: 100% !important;
+      --doc-page-margin: 26px !important;
+      min-width: 0 !important;
+      padding: 0 !important;
+      background: #fff !important;
+    }
+  }
+  @media screen and (max-width: 520px) {
+    doc-page { --doc-page-margin: 18px !important; }
+    doc-page p, doc-page li { text-align: justify; hyphens: auto; }
+  }
+</style>
+</helmet>
+<doc-page margin="0.9in">
+  <div style="background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='260'%3E%3Ctext x='160' y='140' font-family='Archivo, Helvetica, sans-serif' font-size='30' font-weight='600' fill='%231f4d3d' fill-opacity='0.055' text-anchor='middle' transform='rotate(-28 160 140)'%3EThemGoTalk%3C/text%3E%3C/svg%3E&quot;);background-repeat:repeat;print-color-adjust:exact;-webkit-print-color-adjust:exact">
+  <div style="font-family:Archivo,Helvetica,sans-serif;font-size:9.5pt;letter-spacing:0.16em;text-transform:uppercase;color:#1f4d3d">ThemGoTalk</div>
+  <h1 style="font-family:'Source Serif 4',Georgia,serif;font-weight:700;font-size:clamp(21pt,5.4vw,25pt);line-height:1.14;letter-spacing:-0.015em;margin:14pt 0 0;color:#17150f">A Proposal for Transparent Election Information and Evidence Management</h1>
+  <div style="height:2px;background:#1f4d3d;margin:18pt 0 0;width:64pt"></div>
+
+  <div style="font-family:'Source Serif 4',Georgia,serif;font-size:11.5pt;line-height:1.6;color:#23211a;text-align:justify;hyphens:auto">
+    <h2 style="font-family:Archivo,Helvetica,sans-serif;font-size:9.5pt;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#1f4d3d;margin:26pt 0 8pt">Proposal Summary</h2>
+    <p style="margin:0">ThemGoTalk is designed as an independent, non-partisan election-transparency platform that helps citizens, political parties, and observer organisations collect, review, and organise polling-unit result evidence.</p>
+
+    <h2 style="font-family:Archivo,Helvetica,sans-serif;font-size:9.5pt;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#1f4d3d;margin:22pt 0 8pt">The Need</h2>
+    <p style="margin:0">During elections, result sheets and field submissions may be scattered across paper files, messaging platforms, and separate teams. This can make it difficult to monitor reporting coverage, review disputed records, and maintain a clear, organised evidence trail.</p>
+
+    <h2 style="font-family:Archivo,Helvetica,sans-serif;font-size:9.5pt;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#1f4d3d;margin:22pt 0 8pt">Selected Situation Room Capabilities</h2>
+    <p style="margin:0">The platform offers a broader range of tools for election monitoring and organisational coordination. A few key capabilities include:</p>
+    <ul style="margin:10pt 0 0;padding-left:16pt;display:grid;gap:5pt">
+      <li>managing field agents and assigning them to specific locations;</li>
+      <li>collecting polling-unit result sheets and supporting evidence from agents;</li>
+      <li>reviewing and organising submissions within the organisation's Situation Room;</li>
+      <li>monitoring reporting coverage and result summaries through maps and dashboards; and</li>
+      <li>preparing structured reports for internal analysis and follow-up.</li>
+    </ul>
+    <p style="margin:11pt 0 0">These capabilities could help stakeholders identify missing, inconsistent, or disputed records earlier and coordinate follow-up using documented information. Additional capabilities can be presented based on the organisation's specific needs and interests.</p>
+
+    <h2 style="font-family:Archivo,Helvetica,sans-serif;font-size:9.5pt;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#1f4d3d;margin:22pt 0 8pt">Organisational Situation Room</h2>
+    <p style="margin:0">An organisation's results workspace serves as its in-house Situation Room. It gives authorised teams one place to review field submissions, monitor reporting coverage, organise result evidence, and prepare internal reports.</p>
+    <p style="margin:11pt 0 0">ThemGoTalk can be provided as a managed service, with an optional dedicated private deployment for an organisation that requires its own server environment. This option would be subject to agreed hosting, security, support, and data-governance arrangements. It would not give any organisation control over ThemGoTalk's public results or independent review process.</p>
+
+    <h2 style="font-family:Archivo,Helvetica,sans-serif;font-size:9.5pt;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#1f4d3d;margin:22pt 0 8pt">Public Value</h2>
+    <p style="margin:0">The platform aims to:</p>
+    <ul style="margin:10pt 0 0;padding-left:16pt;display:grid;gap:5pt">
+      <li>strengthen transparency and public confidence;</li>
+      <li>support responsible election observation;</li>
+      <li>preserve a clearer evidence trail;</li>
+      <li>improve coordination among relevant stakeholders; and</li>
+      <li>encourage fair, evidence-based public participation.</li>
+    </ul>
+
+    <h2 style="font-family:Archivo,Helvetica,sans-serif;font-size:9.5pt;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#1f4d3d;margin:22pt 0 8pt">Neutrality and Scope</h2>
+    <p style="margin:0">ThemGoTalk is designed to serve participating political parties and observer groups on equal terms. Its purpose is to support election transparency and evidence review while remaining neutral and non-partisan.</p>
+
+    <h2 style="font-family:Archivo,Helvetica,sans-serif;font-size:9.5pt;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#1f4d3d;margin:22pt 0 8pt">Pre-Launch Status</h2>
+    <p style="margin:0">ThemGoTalk is currently in a private pre-launch phase and has not yet been introduced to the general public. We are sharing this early overview with a small number of relevant stakeholders to gather informed feedback before its public launch. This early engagement does not provide exclusivity or preferential access and does not imply political endorsement.</p>
+
+    <h2 style="font-family:Archivo,Helvetica,sans-serif;font-size:9.5pt;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#1f4d3d;margin:22pt 0 8pt">Important Disclaimer</h2>
+    <blockquote style="margin:0;padding:12pt 14pt;background:#f4f1e9;border-left:2px solid #1f4d3d;break-inside:avoid">
+      <p style="margin:0;font-size:11pt;line-height:1.55;text-align:justify"><strong>ThemGoTalk is an independent platform and is not an official INEC platform.</strong> Election result information displayed by ThemGoTalk may be independently processed and aggregated from publicly available information published through INEC's IReV portal and from result sheets submitted by participating political party agents. Agent-submitted information is identified separately by its source and review status. All results displayed are unofficial and do not constitute INEC's official collation or declaration of election results.</p>
+    </blockquote>
+
+    <h2 style="font-family:Archivo,Helvetica,sans-serif;font-size:9.5pt;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#1f4d3d;margin:22pt 0 8pt">Expression of Interest</h2>
+    <p style="margin:0">At this stage, we would value your perspective on whether a platform of this nature could be useful and whether you would be interested in learning more about ThemGoTalk. No endorsement or commitment is being requested.</p>
+    <p style="margin:11pt 0 0">Any further engagement would be conducted transparently and on equal terms with political parties and observer groups, preserving the platform's neutrality and public-interest purpose.</p>
+
+    <div style="margin:22pt 0 0;padding-top:12pt;border-top:1px solid #d9d4c6;display:flex;flex-wrap:wrap;gap:6pt 18pt;align-items:baseline;break-inside:avoid">
+      <span style="font-family:Archivo,Helvetica,sans-serif;font-size:9pt;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#1f4d3d">Email</span>
+      <a href="mailto:info@jenkinscorner.com" style="font-size:11.5pt">info@jenkinscorner.com</a>
+    </div>
+
+    
+  </div>
+</div><p data-screen-only="true" style="margin: 40pt 0 0; text-align: left; font-family: Archivo,Helvetica,sans-serif; font-size: 10.5pt; line-height: 1.6; color: #4a463a">Platform screens referenced in this proposal are available in the <a href="ThemGoTalk%20Proposal.dc.html" style="font-weight: 600;">interactive gallery</a></p>
+</doc-page>
+<div data-screen-only="true" style="{{ endBandStyle }}">
+  <div style="max-width:760px;margin:0 auto;padding:clamp(36px,6vw,72px) clamp(20px,4vw,40px);display:flex;flex-wrap:wrap;gap:24px;align-items:flex-end;justify-content:space-between">
+    <div style="min-width:0">
+      <div style="font-family:Archivo,Helvetica,sans-serif;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#5fd7a4;margin-bottom:14px">End of proposal</div>
+      <p style="margin:0;font-family:Archivo,Helvetica,sans-serif;font-weight:600;font-size:clamp(20px,3vw,30px);line-height:1.2;letter-spacing:-0.02em;color:#f4f3ef;max-width:22ch">See the platform screens behind this proposal</p>
+    </div>
+    <a href="ThemGoTalk%20Proposal.dc.html" style="flex:none;font-family:Archivo,Helvetica,sans-serif;font-weight:600;font-size:15px;padding:14px 24px;border-radius:3px;background:#5fd7a4;color:#0a0b0b;white-space:nowrap" style-hover="background:#ffffff;color:#0a0b0b">Open the gallery →</a>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { shown: false };
+  componentDidMount() {
+    this._scroll = () => {
+      const h = document.documentElement;
+      const nearEnd = h.scrollTop + h.clientHeight >= h.scrollHeight - 140;
+      if (nearEnd !== this.state.shown) this.setState({ shown: nearEnd });
+    };
+    window.addEventListener("scroll", this._scroll, { passive: true });
+    window.addEventListener("resize", this._scroll);
+    this._scroll();
+  }
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this._scroll);
+    window.removeEventListener("resize", this._scroll);
+  }
+  renderVals() {
+    const on = this.state.shown;
+    return {
+      endBandStyle: [
+        "background:#0a0b0b",
+        "border-top:1px solid rgba(244,243,239,0.12)",
+        "transition:opacity 520ms ease, transform 520ms ease",
+        on ? "opacity:1" : "opacity:0",
+        on ? "transform:none" : "transform:translateY(22px)"
+      ].join(";")
+    };
+  }
+}
+</script>
+</body>
+</html>
